@@ -19,3 +19,13 @@ app.use(express.json());
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+
+//Importing routes ang giving the server access
+const routes = require("./controllers/burgers_controller");
+
+app.use(routes);
+
+//Start the server listening
+app.listen(PORT, function() {
+    console.log("Listening on " + PORT);
+});
