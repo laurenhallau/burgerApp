@@ -1,1 +1,6 @@
-In this file, write insert queries to populate the burgers table with at least three entries.
+USE burgers_db;
+
+INSERT INTO burgers (burger_name, devoured) VALUES ("Mushroom Burger", FALSE),
+INSERT INTO burgers (burger_name, devoured) VALUES ("Quinoa Burger", FALSE),
+INSERT INTO burgers (burger_name, devoured) VALUES ("Bacon Burger", FALSE),
+
