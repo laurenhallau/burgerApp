@@ -1,6 +1,7 @@
+//Connecting Node to MySQL
 const mysql = require("mysql");
 
-//Creating connection to mysql
+//Creating connection to MySQL
 const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
